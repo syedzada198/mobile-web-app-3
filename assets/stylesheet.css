@@ -85,7 +85,7 @@ footer ul {
 
 footer ul li {
     list-style: none;
-    padding: 8px 30px;
+    padding: 5px 30px;
 }
 
 footer ul li a {
@@ -378,3 +378,22 @@ footer ul li a {
         object-fit: cover;
     }
 /* about us end */
+
+/* faqs page strat */
+.faqs-main-2 .h2{
+    margin-top: 80px;
+    margin-bottom: 30px;
+    text-align: center;
+}
+.faqs-main-2{
+
+    margin: 20px;
+}
+.faqs-main-2 p{
+    text-align: center;
+}
+.faqs-main-2 .h2-1{
+    text-align: center;
+    margin: 30px;
+}
+/* faqs page end */
