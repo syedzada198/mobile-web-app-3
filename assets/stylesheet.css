@@ -27,6 +27,7 @@
 
 header a {
     color: white !important;
+    text-decoration: none;
 }
 
 .menu-bg {
