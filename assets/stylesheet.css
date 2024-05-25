@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-shadow: none !important;
+}
+
+
+/* Header css strat*/
+.navbar-header {
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #576F72 !important;
+    color: white !important;
+    text-shadow: none !important;
+    position: fixed;
+    width: 100%;
+}
+
+.check {
+    display: flex;
+    margin: 0 auto !important;
+}
+
+header a {
+    color: white !important;
+}
+
+.menu-bg {
+    background-color: #576F72 !important;
+    margin-top: 45px !important;
+    box-shadow: none !important;
+}
+
+.ui-listview>li>a.ui-btn {
+    background-color: #576F72 !important;
+    font-weight: normal !important;
+
+}
+
+.menu-bg ul li a {
+    border: none !important;
+    padding-left: 40px !important;
+    /* text-align: center !important */
+}
+
+header .ui-btn-icon-right:after {
+    /* left: 0 !important;
+    margin-left: 2px !important; */
+    display: none !important;
+
+}
+
+
+/* Header css end */
+
+
+/* footer css design */
+
+
+.container {
+    width: 100%;
+    padding: 20px;
+}
+
+footer {
+    background-color: #576F72;
+    color: #fff;
+    text-align: center;
+    /* padding: 20px 0; */
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+footer ul {
+    display: flex;
+    justify-content: space-between;
+}
+footer ul li{
+    list-style: none;
+    padding: 10px;
+}
+footer ul li a{
+    
+    text-decoration: none;
+    color: white !important;
+    
+    
+}
+.size-adjust{
+font-size: 18px;
+}
+/* footer css end  */
+
+
+/* Home page css */
+.add-margin {
+    margin-top: 44.33px;
+    margin-bottom: 75px;
+}
+
+.bg-main {
+    background-image: url(img/main-bg.png);
+    height: 220px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    /* align-items: center; */
+
+
+}
+
+.bg-main button {
+    display: inline-block;
+    width: 100px;
+    padding: 6px 1px;
+    margin-top: 168px;
+    margin-left: 10px;
+    background-color: #7D9D9C !important;
+    border: 1px solid #f4f4f4 !important;
+
+
+
+}
+
+.bg-main button a {
+    font-size: 12px;
+    text-decoration: none;
+    color: white !important;
+    font-weight: 600 !important;
+}
+
+.main-paragraph {
+    margin: 15px;
+    text-align: center;
+}
+
+.main-paragraph p {
+    margin-top: 10px;
+}
+
+.accordion-header {
+    cursor: pointer;
+    padding: 10px;
+    background-color: #576F72;
+    color: white;
+}
+
+.accordion-header i {
+    margin-right: 5px;
+}
+
+.accordion-content {
+    display: none;
+    padding: 10px;
+    background-color: #7D9D9C;
+    max-height: 0;
+    overflow: hidden;
+    color: white;
+}
+
+.accordion-item {
+    margin-bottom: 10px;
+    border: 1px solid #f4f4f4;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+    max-height: 500px;
+}
+
+.faqs-main h2 {
+    text-align: center;
+    margin: 20px;
+}
+
+.faqs-main {
+    margin: 10px;
+}
+
+/* Home page css end */

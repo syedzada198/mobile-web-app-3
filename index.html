@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>jQuery Mobile Menu Panel</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+    <link rel="stylesheet" href="assets/stylesheet.css">
+    <style>
+        
+    </style>
+</head>
+
+<body>
+
+    
+    <div data-role="page" id="home-page" class="page home-page">
+        <header>
+            <div data-role="header" data-position="fixed">
+                <div class="navbar-header">
+                    <a href="#menuPanel" class="icon-set"><i class="fa-solid fa-bars"></i></a>
+                    <!-- <a href="#home-page"><img class="logo-img" src="assets/img/logo.png" height="45px"></a> -->
+                    <div class="check">
+                        <h3>Exchange Portal</h3>
+                    </div>
+
+                </div>
+                <div data-role="panel" id="menuPanel" data-position="left" data-display="overlay" class="menu-bg">
+                    <ul data-role="listview">
+                        <li><a href="#home-page" data-rel="close" class="adjust-home">Home</a></li>
+                        <li><a href="#aboutus-page" data-rel="close">About Us</a></li>
+                        <li><a href="#login-page" data-rel="close">Login</a></li>
+                        <li><a href="#course-page" data-rel="close">Courses</a></li>
+                        <li><a href="#eligibility-criteria-page" data-rel="close">Eligibility Criteria</a></li>
+                        <li><a href="#events-page" data-rel="close">Events</a></li>
+                        <li><a href="#contactus-page" data-rel="close">Contact Us</a></li>
+                        <li><a href="#register-page" data-rel="close">Register</a></li>
+                    </ul>
+                </div>
+            </div>
+        </header>
+
+        <main class="add-margin">
+            <div class="bg-main">
+                <button><a href="index.html">Learn More</a></button>
+            </div>
+            <div class="main-paragraph">
+                <h2>The Impact of Student Exchange Programs</h2>
+                <p>Participating in a student exchange program offers a transformative experience, fostering cultural understanding and personal growth through immersion in a new academic environment. It cultivates invaluable interpersonal skills, adaptability, and resilience while providing a platform for intellectual exchange and collaboration across borders.</p>
+            </div>
+
+
+            <div class="faqs-main">
+                <h2>FAQs</h2>
+                <div class="accordion">
+                    <div class="accordion-item">
+                        <div class="accordion-header"><i class="fas fa-plus"></i> What types of degree programs does your institution offer?</div>
+                        <div class="accordion-content">We offer undergraduate, graduate, and doctoral degree programs in various fields such as engineering, arts, sciences, business, and more.</div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header"><i class="fas fa-plus"></i> How can I apply for a degree program at your institution?</div>
+                        <div class="accordion-content">To apply for a degree program, you need to complete an online application form, submit academic transcripts, standardized test scores (if required), letters of recommendation, and a personal statement. Applications are reviewed by the admissions committee.</div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header"><i class="fas fa-plus"></i> What support services are available for international students enrolled in degree programs?</div>
+                        <div class="accordion-content">We provide various support services including academic advising, language assistance, cultural orientation, and opportunities for social integration to ensure a smooth transition and successful academic experience.</div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header"><i class="fas fa-plus"></i> How does your student exchange program work?</div>
+                        <div class="accordion-content">Our student exchange program allows students to study abroad at partner universities for a semester or academic year. Students earn credits that transfer back to their home institution, and they have the opportunity to immerse themselves in a different academic and cultural environment.</div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header"><i class="fas fa-plus"></i> What are the eligibility requirements for participating in the student exchange program?</div>
+                        <div class="accordion-content">Eligibility requirements vary but typically include good academic standing, language proficiency, and approval from the home institution. Specific requirements and application procedures are outlined on our exchange program website.</div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header"><i class="fas fa-plus"></i> Can you describe the application process for the student exchange program?</div>
+                        <div class="accordion-content">To apply for the student exchange program, students need to complete an application form, submit academic transcripts, letters of recommendation, a personal statement, and any additional documents required by the host institution. Applications are reviewed by the exchange program coordinators.</div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header"><i class="fas fa-plus"></i> How do you assist exchange students in finding accommodation during their stay?</div>
+                        <div class="accordion-content">We provide assistance in finding accommodation options such as university dormitories, shared apartments, or host families. Additionally, we offer guidance on navigating local rental markets and connecting with relevant resources.</div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header"><i class="fas fa-plus"></i> What resources are available to exchange students to support their academic and cultural integration?</div>
+                        <div class="accordion-content">Exchange students have access to orientation programs, language courses, academic advising, cultural events, and support from international student services staff to help them adjust to their new environment and succeed academically.</div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header"><i class="fas fa-plus"></i> How can I use your institution's exchange portal to find and apply for exchange opportunities?</div>
+                        <div class="accordion-content">Our exchange portal allows you to search for exchange opportunities based on criteria such as location, language of instruction, and academic field. Once you find a suitable program, you can submit your application through the portal, track its status, and communicate with program coordinators.</div>
+                    </div>
+                    
+                    <div class="accordion-item">
+                        <div class="accordion-header"><i class="fas fa-plus"></i> Are there any partnership agreements with other universities for student exchange programs?</div>
+                        <div class="accordion-content">Yes, we have established partnership agreements with a network of universities around the world to facilitate student exchange programs. These partnerships provide students with a wide range of options for studying abroad and foster international collaboration and understanding.</div>
+                    </div>
+                    
+                    
+                  </div>
+                  
+                  
+            </div>
+
+        </main>
+        <footer>
+            
+                <ul>
+                    <li>
+                        <a href="#"><i class="fa-regular fa-folder-open"></i><br>Course</a>
+                    </li>
+                    <li class=" size-adjust">
+                        <a href="#"><i class="fa-solid fa-house"></i><br>Home</a>
+                    </li>
+                    <li>
+                        <a href="#"><i class="fa-solid fa-question"></i><br>FAQs</a>
+                    </li>
+                </ul>
+        
+            
+        </footer>
+</div>
+</body>
+<script src="assets/script.js"></script>
+
+</html>
