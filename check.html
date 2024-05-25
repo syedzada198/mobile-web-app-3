@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form in Table</title>
+    <style>
+       
+        table {
+            width: 100%;
+            border-radius: 8px;
+            overflow: hidden;
+        }
+
+        td {
+            padding: 5px;
+                }
+
+        input[type="text"],
+        input[type="email"],
+        input[type="tel"],
+        input[type="password"],
+        select,
+        button {
+            width: 100%;
+            padding: 8px;
+            margin: 5px 0;
+            border: 1px solid #ddd;
+            border-radius: 4px;
+            /* box-sizing: border-box; */
+        }
+
+        button {
+            background-color: #4caf50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #45a049;
+        }
+
+        img {
+            max-width: 100px;
+            max-height: 100px;
+            display: block;
+            margin-top: 5px;
+        }
+
+        .error {
+            color: red;
+            font-size: 0.8em;
+        }
+    </style>
+</head>
+
+<body>
+
+    <table>
+        <tr>
+            <td>Name:</td>
+        </tr>
+        <tr>
+            <td><input type="text" id="name"></td>
+        </tr>
+        <tr>
+            <td>Email Address:</td>
+        </tr>
+        <tr>
+            <td><input type="email" id="email"></td>
+        </tr>
+        <tr>
+            <td>Phone Number:</td>
+        </tr>
+        <tr>
+            <td><input type="tel" id="phone"></td>
+        </tr>
+        <tr>
+            <td>Password:</td>
+        </tr>
+        <tr>
+            <td><input type="password" id="password"></td>
+        </tr>
+        <tr>
+            <td>Choose File:</td>
+        </tr>
+        <tr>
+            <td>
+                <input type="file" id="fileInput" onchange="previewImage()">
+                <img id="preview" src="#" alt="Preview">
+            </td>
+        </tr>
+        <tr>
+            <td>Semesters:</td>
+        </tr>
+        <tr>
+            <td>
+                <select id="semesters">
+                    <option value="spring">Spring</option>
+                    <option value="summer">Summer</option>
+                    <option value="fall">Fall</option>
+                    <option value="winter">Winter</option>
+                </select>
+            </td>
+        </tr>
+        <tr>
+            <td colspan="2"><button onclick="validateForm()">Submit</button></td>
+        </tr>
+    </table>
+
+    <script>
+        function previewImage() {
+            var fileInput = document.getElementById('fileInput');
+            var preview = document.getElementById('preview');
+
+            fileInput.addEventListener('change', function () {
+                var file = this.files[0];
+                var reader = new FileReader();
+
+                reader.onload = function () {
+                    preview.src = reader.result;
+                }
+
+                if (file) {
+                    reader.readAsDataURL(file);
+                } else {
+                    preview.src = '';
+                }
+            });
+        }
+
+        function validateForm() {
+            var name = document.getElementById('name').value;
+            var email = document.getElementById('email').value;
+            var phone = document.getElementById('phone').value;
+            var password = document.getElementById('password').value;
+            var file = document.getElementById('fileInput').value;
+
+            if (name.trim() === '' || email.trim() === '' || phone.trim() === '' || password.trim() === '' || file.trim() === '') {
+                alert('Please fill out all fields.');
+                return false;
+            }
+
+            // You can add more validation logic here for email format, phone number format, etc.
+
+            // If all validation passes, you can submit the form
+            alert('Form submitted successfully!');
+            // Here you can add code to actually submit the form to a server if needed.
+        }
+    </script>
+
+</body>
+
+</html>
