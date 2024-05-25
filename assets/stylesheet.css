@@ -44,13 +44,13 @@ header a {
 
 .menu-bg ul li a {
     border: none !important;
-    padding-left: 40px !important;
-    /* text-align: center !important */
+    padding-left: 12px !important;
+}
+.menu-bg ul li a i{
+    padding-right: 10px;
 }
 
 header .ui-btn-icon-right:after {
-    /* left: 0 !important;
-    margin-left: 2px !important; */
     display: none !important;
 
 }
@@ -121,12 +121,13 @@ footer ul li a {
     width: 100px;
     padding: 6px 1px;
     margin-top: 168px;
-    margin-left: 10px;
+    margin-left: 30px;
     background-color: #7D9D9C !important;
     border: 1px solid #f4f4f4 !important;
-
-
-
+    align-items: center;
+}
+.bg-main button i{
+    margin-left: 5px;
 }
 
 .bg-main button a {
@@ -229,7 +230,7 @@ footer ul li a {
     position: absolute !important;
     top: 30% !important;
     transform: translateY(-50%) !important;
-    background: #0070eb !important;
+    background: #576F72 !important;
     color: #fff !important;
     border: none !important;
     padding: 10px 15px !important;
@@ -254,8 +255,6 @@ footer ul li a {
 
 /* research css start */
 .parent {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 20px;
     border: 1px solid #ccc;
@@ -285,53 +284,97 @@ footer ul li a {
 
 
 /* register css start */
-form {
-    margin-top: 10px;
-}
 
-table {
-    width: 100%;
-    border-radius: 8px;
-    overflow: hidden;
-}
-
-label {
-    font-size: 20px !important;
-    padding: 5px;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="password"],
-select,
-button {
-    width: 100%;
-    padding: 8px;
-    margin: 5px 0;
-    border-radius: 4px;
-}
-
-button {
+.contact-us-form .ui-btn {
     background-color: #576F72 !important;
+    border: 1px solid #f4f4f4 !important;
     color: white !important;
-    border: none;
-    cursor: pointer;
+    border-radius: 10px !important;
+    font-weight: bold !important;
+    box-shadow: none !important;
+    text-shadow: none !important;
+
 }
 
-button:hover {
+.contact-us-form .ui-btn:hover{
     background-color: #7D9D9C !important;
+    border: 1px solid #f4f4f4;
 }
 
-form img {
-    max-width: 100px;
-    max-height: 100px;
-    display: block;
-    margin-top: 5px;
+.contact-us-form input , textarea{
+    border: 1px solid #576F72 !important;
+    padding: 12px !important;
+    box-shadow: none !important;
+   }
+
+   .contact-us-form textarea{
+    min-height: 110px !important;
+   }
+.contact-us-form {
+    margin-top: 20px !important;
+    margin: 20px;
 }
 
-textarea {
-    height: 130px !important;
+.contact-us-form .ui-field-contain {
+    padding: 5px !important;
+}
+
+.contact-us-form .ui-input-text {
+    background-color: #f9f9f9 !important;
+}
+
+
+
+.contact-us-form .ui-shadow-inset {
+    box-shadow: none !important;
+}
+
+.contact-us-form .ui-field-contain {
+    border: none !important;
+}
+
+.contact-us-form .ui-input-text {
+    margin: 0 !important;
+    width: 100% !important;
+}
+
+.contact-us-form .ui-select {
+    width: 100% !important;
+}
+ .ui-mobile label {
+    font-size: 20px;
+    margin-left: 3px;
+    padding-bottom: 5px !important;
 }
 
 /* register css end */
+
+
+/* about us start */
+    .about-us-align{
+        text-align: center;
+        margin: 10px;
+    }
+    .about-main-bg{
+        background-image: url(img/about-us-main.jpg);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        object-fit: cover;
+    }
+    .about-us-align h2{
+        margin-top: 20px;
+    }
+    .about-us-align p{
+        margin-top: 10px;
+    }
+    .about-main-bg1{
+        background-image: url(img/about-main-2.webp);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        height: 200px;
+        object-fit: cover;
+    }
+/* about us end */

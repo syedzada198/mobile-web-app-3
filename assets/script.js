@@ -8,15 +8,15 @@ document.addEventListener('DOMContentLoaded', function () {
       item.classList.toggle('active');
 
       const icon = header.querySelector('i');
-      icon.classList.toggle('fa-plus');
-      icon.classList.toggle('fa-minus');
+      icon.classList.toggle('fa-arrow-down');
+      icon.classList.toggle('fa-arrow-right');
 
       accordionItems.forEach(function (otherItem) {
         if (otherItem !== item && otherItem.classList.contains('active')) {
           otherItem.classList.remove('active');
           const otherIcon = otherItem.querySelector('.accordion-header i');
-          otherIcon.classList.remove('fa-minus');
-          otherIcon.classList.add('fa-plus');
+          otherIcon.classList.remove('fa-arrow-down');
+          otherIcon.classList.add('fa-arrow-right');
         }
       });
     });
@@ -57,53 +57,27 @@ document.addEventListener("DOMContentLoaded", function () {
 });
 
 
-
-
-
-function previewImage() {
-  var fileInput = document.getElementById('fileInput');
-  var preview = document.getElementById('preview');
-
-  fileInput.addEventListener('change', function () {
-    var file = this.files[0];
-    var reader = new FileReader();
-
-    reader.onload = function () {
-      preview.src = reader.result;
-    }
-
-    if (file) {
-      reader.readAsDataURL(file);
-    } else {
-      preview.src = '';
-    }
-  });
-}
-
-
-
-
-
 function validateForm() {
   var err = false;
-  var name = $("#nameInput").val();
-  var email = $("#emailInput").val();
-  var message = $("#messageInput").val();
+  var name = $("#nameinput").val();
+  var email = $("#emailinput").val();
+  var message = $("#messageinput").val();
+  var password = $("#passwordinput").val();
 
-  if (name === "" || email === "" || message === "" || !isValidEmail(email)) {
-    err = true;
+  if (name === "" || email === "" || password === "" || message === "" || !isValidEmail(email)) {
+      err = true;
   }
 
   function isValidEmail(email) {
-    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-    return emailRegex.test(email);
+      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      return emailRegex.test(email);
   }
 
-  if (err == false) {
-    $("#errorMessage").html('<p style="color: green; border: 2px solid green; padding: 10px; font-weight: 600; font-size: 14px;">Successfully submitted.</p>');
-    $("#myForm")[0].reset();
+  if (!err) {
+      $("#errMsg").html('<p style="color: green; border: 2px solid green; padding: 10px; font-weight: 600; font-size: 14px;">Successfully submitted.</p>');
+      $("#contact-us-form")[0].reset();
   } else {
-    $("#errorMessage").html('<p style="color: red; border: 2px solid red; padding: 10px; font-weight: 600; font-size: 14px;">All fields are required and email should be correct format.</p>');
+      $("#errMsg").html('<p style="color: red; border: 2px solid red; padding: 10px; font-weight: 600; font-size: 14px;">All fields are required and email should be in the correct format.</p>');
   }
   return false;
 }
