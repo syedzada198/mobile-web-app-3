@@ -32,8 +32,10 @@ header a {
 
 .menu-bg {
     background-color: #576F72 !important;
-    margin-top: 45px !important;
+    margin-top: 47px !important;
     box-shadow: none !important;
+    border-right: 1px solid #f4f4f4 !important;
+    border-bottom: 1px solid #f4f4f4 !important;
 }
 
 .ui-listview>li>a.ui-btn {
@@ -54,6 +56,10 @@ header .ui-btn-icon-right:after {
     display: none !important;
 
 }
+.ui-panel-animate.ui-panel-position-left.ui-panel-display-overlay{
+    margin-top: 60px !important;
+    margin-left: 0 !important;
+}
 
 
 /* Header css end */
@@ -61,41 +67,29 @@ header .ui-btn-icon-right:after {
 
 /* footer css design */
 
-
-.container {
-    width: 100%;
-    padding: 20px;
+.ui-page-theme-a .ui-body-inherit{
+    margin: 20px !important;
 }
 
-footer {
-    background-color: #576F72;
-    color: #fff;
-    text-align: center;
-    /* padding: 20px 0; */
-    position: fixed;
-    bottom: 0;
-    width: 100%;
 
+.footer-adjust {
+    border: none !important;
+    position: fixed !important;
 }
 
-footer ul {
-    display: flex;
-    justify-content: space-between;
+.footer-adjust div {
+    border: none !important;
 }
 
-footer ul li {
-    list-style: none;
-    padding: 5px 30px;
+.footer-adjust div ul {
+    background-color: #576F72 !important;
 }
 
-footer ul li a {
-
-    text-decoration: none;
+.footer-adjust div ul a {
     color: white !important;
-
-
+    background-color: #576F72 !important;
+    border: none !important;
 }
-
 /* footer css end  */
 
 
@@ -104,7 +98,6 @@ footer ul li a {
     margin-top: 44.33px;
     margin-bottom: 75px;
 }
-
 .bg-main {
     background-image: url(img/main-bg.png);
     height: 220px;
@@ -274,7 +267,9 @@ footer ul li a {
 .child p {
     margin: 10px 5px;
 }
-
+.child h2{
+    margin-top: 10px;
+}
 .research-heading {
     margin-top: 90px;
     text-align: center;
@@ -397,3 +392,15 @@ footer ul li a {
     margin: 30px;
 }
 /* faqs page end */
+
+/* program page start */
+.last-page{
+    margin: 80px 0px 50px 0px;
+    text-align: center;
+}
+
+.ui-input-search:after{
+    padding-left: 10px !important;
+}
+/* program page end */
+

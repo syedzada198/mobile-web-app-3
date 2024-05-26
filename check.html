@@ -1,61 +1,82 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exciting Events</title>
     <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
-    <script src="https://code.jquery.com/jquery-1.11.1.min.js"></script>
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
     <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
-    <script>
-        function validateForm() {
-            // Validation code here
-            return true; // Prevent form submission if validation fails
-        }
-    </script>
-    <style>
-        .ui-field-contain label {
-            display: block;
-            margin-bottom: 0.5em;
-        }
-        .ui-field-contain input,
-        .ui-field-contain textarea {
-            display: block;
-            width: 100%;
-            margin-bottom: 1em;
-        }
-    </style>
 </head>
 <body>
-    <div data-role="page">
-        <div data-role="header">
-            <h1>Form Example</h1>
-        </div>
-        <div data-role="main" class="ui-content">
-            <form id="myForm" onsubmit="return validateForm()">
-                <div class="ui-field-contain">
-                    <label for="firstNameInput">First Name:</label>
-                    <input type="text" name="firstName" id="firstNameInput" placeholder="Enter your First Name">
-                </div>
-                <div class="ui-field-contain">
-                    <label for="lastNameInput">Last Name:</label>
-                    <input type="text" name="lastName" id="lastNameInput" placeholder="Enter your Last Name">
-                </div>
-                <div class="ui-field-contain">
-                    <label for="emailInput">Email:</label>
-                    <input type="email" name="email" id="emailInput" placeholder="Enter your Email Address">
-                </div>
-                <div class="ui-field-contain">
-                    <label for="passwordInput">Password:</label>
-                    <input type="password" name="password" id="passwordInput" placeholder="Enter your Password">
-                </div>
-                <div class="ui-field-contain">
-                    <label for="messageInput">Message:</label>
-                    <textarea name="message" id="messageInput" placeholder="Enter your Message"></textarea>
-                </div>
-                <div class="ui-field-contain">
-                    <div id="errorMessage"></div>
-                </div>
-                <button type="submit" class="ui-btn ui-corner-all ui-shadow">Submit</button>
-            </form>
-        </div>
+
+<div data-role="page" id="events-page">
+    <div data-role="header">
+        <h1>Exciting Events Ahead</h1>
     </div>
+
+    <div data-role="main" class="ui-content" data-input="#searchInput">
+        <form class="ui-filterable">
+            <input id="searchInput" data-type="search" placeholder="Search events...">
+        </form>
+
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <img src="assets/img/event1.jpeg" alt="error" height="170px">
+            </div>
+            <div class="ui-block-b">
+                <h2>Discover Opportunities</h2>
+                <p>Explore internship possibilities, networking events, and career workshops.</p>
+            </div>
+        </div>
+        <!-- Repeat similar structure for other events -->
+    </div>
+
+    <div data-role="footer">
+        <h4>&copy; 2024 Your Website</h4>
+    </div>
+</div>
+
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exciting Events</title>
+    <link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+    <script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+</head>
+<body>
+
+<div data-role="page" id="events-page">
+    <div data-role="header">
+        <h1>Exciting Events Ahead</h1>
+    </div>
+
+    <div data-role="main" class="ui-content" data-input="#searchInput">
+        <form class="ui-filterable">
+            <input id="searchInput" data-type="search" placeholder="Search events...">
+        </form>
+
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <img src="assets/img/event1.jpeg" alt="error" height="170px">
+            </div>
+            <div class="ui-block-b">
+                <h2>Discover Opportunities</h2>
+                <p>Explore internship possibilities, networking events, and career workshops.</p>
+            </div>
+        </div>
+        <!-- Repeat similar structure for other events -->
+    </div>
+
+    <div data-role="footer">
+        <h4>&copy; 2024 Your Website</h4>
+    </div>
+</div>
+
 </body>
 </html>
