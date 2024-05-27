@@ -398,7 +398,7 @@ textarea {
 
 .faqs-main-2 {
 
-    margin: 20px;
+    margin: 10px;
 }
 
 .faqs-main-2 p {
@@ -426,11 +426,10 @@ textarea {
 
 /* go to top button css start */
 .go-to-top {
-    display: none;
-    position: fixed;
+    display: block !important;
     bottom: 60px;
-    right: 20px;
-    /* width: 200px; */
+    position: fixed;
+    right: 22px !important;
     padding: 10px;
     color: white !important;
     background-color: #7D9D9C;
@@ -439,6 +438,10 @@ textarea {
     text-align: center;
     z-index: 1000;
     border: 1px solid #f4f4f4;
+}
+
+.go-to-top i {
+    margin-right: 1px;
 }
 
 /* go to top button css end */
