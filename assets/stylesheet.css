@@ -48,7 +48,8 @@ header a {
     border: none !important;
     padding-left: 12px !important;
 }
-.menu-bg ul li a i{
+
+.menu-bg ul li a i {
     padding-right: 10px;
 }
 
@@ -56,7 +57,8 @@ header .ui-btn-icon-right:after {
     display: none !important;
 
 }
-.ui-panel-animate.ui-panel-position-left.ui-panel-display-overlay{
+
+.ui-panel-animate.ui-panel-position-left.ui-panel-display-overlay {
     margin-top: 60px !important;
     margin-left: 0 !important;
 }
@@ -67,7 +69,7 @@ header .ui-btn-icon-right:after {
 
 /* footer css design */
 
-.ui-page-theme-a .ui-body-inherit{
+.ui-page-theme-a .ui-body-inherit {
     margin: 20px !important;
 }
 
@@ -90,6 +92,7 @@ header .ui-btn-icon-right:after {
     background-color: #576F72 !important;
     border: none !important;
 }
+
 /* footer css end  */
 
 
@@ -97,6 +100,7 @@ header .ui-btn-icon-right:after {
 .add-margin {
     margin-top: 44.33px;
 }
+
 .bg-main {
     background-image: url(img/main-bg.png);
     height: 220px;
@@ -119,11 +123,12 @@ header .ui-btn-icon-right:after {
     align-items: center;
     border-radius: 5px;
 }
-.bg-main a i{
+
+.bg-main a i {
     margin-left: 5px;
 }
 
-.bg-main  a {
+.bg-main a {
     font-size: 12px;
     text-decoration: none;
     color: white !important;
@@ -267,9 +272,11 @@ header .ui-btn-icon-right:after {
 .child p {
     margin: 10px 5px;
 }
-.child h2{
+
+.child h2 {
     margin-top: 10px;
 }
+
 .research-heading {
     margin-top: 90px;
     text-align: center;
@@ -291,20 +298,22 @@ header .ui-btn-icon-right:after {
 
 }
 
-.contact-us-form .ui-btn:hover{
+.contact-us-form .ui-btn:hover {
     background-color: #7D9D9C !important;
     border: 1px solid #f4f4f4;
 }
 
-.contact-us-form input , textarea{
+.contact-us-form input,
+textarea {
     border: 1px solid #576F72 !important;
     padding: 12px !important;
     box-shadow: none !important;
-   }
+}
 
-   .contact-us-form textarea{
+.contact-us-form textarea {
     min-height: 110px !important;
-   }
+}
+
 .contact-us-form {
     margin-top: 20px !important;
     margin: 20px;
@@ -336,7 +345,8 @@ header .ui-btn-icon-right:after {
 .contact-us-form .ui-select {
     width: 100% !important;
 }
- .ui-mobile label {
+
+.ui-mobile label {
     font-size: 20px;
     margin-left: 3px;
     padding-bottom: 5px !important;
@@ -346,61 +356,89 @@ header .ui-btn-icon-right:after {
 
 
 /* about us start */
-    .about-us-align{
-        text-align: center;
-        margin: 10px;
-    }
-    .about-main-bg{
-        background-image: url(img/about-us-main.jpg);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 200px;
-        object-fit: cover;
-    }
-    .about-us-align h2{
-        margin-top: 20px;
-    }
-    .about-us-align p{
-        margin-top: 10px;
-    }
-    .about-main-bg1{
-        background-image: url(img/about-main-2.webp);
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-        height: 200px;
-        object-fit: cover;
-    }
+.about-us-align {
+    text-align: center;
+    margin: 10px;
+}
+
+.about-main-bg {
+    background-image: url(img/about-us-main.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    object-fit: cover;
+}
+
+.about-us-align h2 {
+    margin-top: 20px;
+}
+
+.about-us-align p {
+    margin-top: 10px;
+}
+
+.about-main-bg1 {
+    background-image: url(img/about-main-2.webp);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    object-fit: cover;
+}
+
 /* about us end */
 
 /* faqs page strat */
-.faqs-main-2 .h2{
+.faqs-main-2 .h2 {
     margin-top: 80px;
     margin-bottom: 30px;
     text-align: center;
 }
-.faqs-main-2{
+
+.faqs-main-2 {
 
     margin: 20px;
 }
-.faqs-main-2 p{
+
+.faqs-main-2 p {
     text-align: center;
 }
-.faqs-main-2 .h2-1{
+
+.faqs-main-2 .h2-1 {
     text-align: center;
     margin: 30px;
 }
+
 /* faqs page end */
 
 /* program page start */
-.last-page{
+.last-page {
     margin: 80px 0px 50px 0px;
     text-align: center;
 }
 
-.ui-input-search:after{
+.ui-input-search:after {
     padding-left: 10px !important;
 }
+
 /* program page end */
 
+/* go to top button css start */
+.go-to-top {
+    display: none;
+    position: fixed;
+    bottom: 60px;
+    right: 20px;
+    /* width: 200px; */
+    padding: 10px;
+    color: white !important;
+    background-color: #7D9D9C;
+    border-radius: 5px;
+    text-decoration: none;
+    text-align: center;
+    z-index: 1000;
+    border: 1px solid #f4f4f4;
+}
+
+/* go to top button css end */

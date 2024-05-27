@@ -65,20 +65,35 @@ function validateForm() {
   var password = $("#passwordinput").val();
 
   if (name === "" || email === "" || password === "" || message === "" || !isValidEmail(email)) {
-      err = true;
+    err = true;
   }
 
   function isValidEmail(email) {
-      var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-      return emailRegex.test(email);
+    var emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+    return emailRegex.test(email);
   }
 
   if (!err) {
-      $("#errMsg").html('<p style="color: green; border: 2px solid green; padding: 10px; font-weight: 600; font-size: 14px;">Successfully submitted.</p>');
-      $("#contact-us-form")[0].reset();
+    $("#errMsg").html('<p style="color: green; border: 2px solid green; padding: 10px; font-weight: 600; font-size: 14px;">Successfully submitted.</p>');
+    $("#contact-us-form")[0].reset();
   } else {
-      $("#errMsg").html('<p style="color: red; border: 2px solid red; padding: 10px; font-weight: 600; font-size: 14px;">All fields are required and email should be in the correct format.</p>');
+    $("#errMsg").html('<p style="color: red; border: 2px solid red; padding: 10px; font-weight: 600; font-size: 14px;">All fields are required and email should be in the correct format.</p>');
   }
   return false;
 }
 
+
+$(document).ready(function () {
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 100) {
+      $('.go-to-top').fadeIn();
+    } else {
+      $('.go-to-top').fadeOut();
+    }
+  });
+
+  $(".go-to-top").click(function (e) {
+    e.preventDefault();
+    $("html, body").animate({ scrollTop: 0 }, "slow");
+  });
+});
