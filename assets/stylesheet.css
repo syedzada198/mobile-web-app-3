@@ -149,6 +149,8 @@ header .ui-btn-icon-right:after {
     padding: 10px;
     background-color: #576F72;
     color: white;
+    border-radius: 8px;
+
 }
 
 .accordion-header i {
@@ -157,11 +159,13 @@ header .ui-btn-icon-right:after {
 
 .accordion-content {
     display: none;
-    padding: 10px;
+    padding: 8px;
     background-color: #7D9D9C;
     max-height: 0;
     overflow: hidden;
     color: white;
+    border-radius: 10px;
+
 }
 
 .accordion-item {
@@ -192,11 +196,18 @@ header .ui-btn-icon-right:after {
     overflow: hidden;
 }
 
+.h2-heading-team {
+    text-align: center;
+    margin-top: 90px;
+}
+
 .card-add {
     display: none;
+    margin-top: 30px;
 }
 
 .card-add.active {
+
     display: block;
 }
 
@@ -206,6 +217,7 @@ header .ui-btn-icon-right:after {
     background-position: center;
     background-size: cover;
     object-fit: cover;
+    border-radius: 20px;
 }
 
 .card-content-t {
@@ -257,6 +269,7 @@ header .ui-btn-icon-right:after {
     padding: 20px;
     border: 1px solid #ccc;
     margin: 20px 10px;
+    border-radius: 14px;
 }
 
 .child {
@@ -267,6 +280,7 @@ header .ui-btn-icon-right:after {
 .child img {
     max-width: 100%;
     height: auto;
+    border-radius: 12px;
 }
 
 .child p {
